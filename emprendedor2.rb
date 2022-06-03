@@ -2,13 +2,13 @@ puts "------------------------------------------------------------"
 puts "Bienvenido al programa Emprendedor 2"
 puts "------------------------------------------------------------"
 puts "Cual es el precio en dólares que quieres vender tu producto?"
-precio_ventas = gets.chomp.to_f;
+precio_ventas = ARGV[0].to_f;
 puts "Cuántos usuarios comunes esperas tener al año?"
-usuarios_comunes = gets.chomp.to_f;
+usuarios_comunes = ARGV[1].to_f;
 puts "Cuántos usuarios premium (pagan el doble) esperas tener al año?"
-usuarios_premium = gets.chomp.to_f;
+usuarios_premium = ARGV[2].to_f;
 puts "Cuántos usuarios gratuitos (no pagan) esperas tener al año?"
-usuarios = gets.chomp.to_f;
+usuarios = ARGV[3].to_f;
 puts "Cuántos son los gastos en dólares al año?"
 gastos = gets.chomp.to_f;
 
